@@ -13,6 +13,9 @@ const pool = new Pool({
     port: '5432'*/
 })
 
+const home = (req, res) => {
+    res.send('PAPU TEST ;v/');
+}
 const getUsers = async (req, res) => {
     const response = await pool.query('SELECT * FROM users');
     res.json(response.rows);
@@ -50,6 +53,7 @@ const deleteUser = async (req, res) => {
 }
 
 module.exports = {
+    home,
     getUsers,
     getUser,
     createUser,
