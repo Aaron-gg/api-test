@@ -1,11 +1,16 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    host: 'localhost',
+    host: 'bbbhtrvrefexxtiz9gvi-postgresql.services.clever-cloud.com',
+    user: 'uqrhp5uqbjbseicrxrko',
+    password: 'W0YbEXRGoorHWeqFRXgP',
+    database: 'bbbhtrvrefexxtiz9gvi',
+    port: '5432'
+    /*host: 'localhost',
     user: 'postgres',
     password: 'admin',
     database: 'firstapi',
-    port: '5432'
+    port: '5432'*/
 })
 
 const getUsers = async (req, res) => {
